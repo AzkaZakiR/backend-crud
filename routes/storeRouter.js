@@ -8,7 +8,7 @@ const storeController = require('../controllers/storeController');
 router.get('/', storeController.getAllStores);
 
 // Get store by ID
-router.get('/:id',authenticate, storeController.getStoreById);
+router.get('/:id', storeController.getStoreById);
 
 // Create a new store
 router.post('/', storeController.createStore);
